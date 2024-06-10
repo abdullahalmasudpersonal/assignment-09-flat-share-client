@@ -20,8 +20,10 @@ export default function RootLayout({
       <html lang="en">
         <body>
           <AppRouterCacheProvider>
-            <Toaster position="top-center" />
-            {children}
+            <>
+              <Toaster position="top-center" />
+              {children}
+            </>
           </AppRouterCacheProvider>
         </body>
       </html>
