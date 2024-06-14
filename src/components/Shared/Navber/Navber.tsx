@@ -102,7 +102,7 @@ const Navber = () => {
                 <Image src={logo} style={logoStyle} alt="logo of Flat Share" />
               </Link>
               <Box sx={{ display: { xs: "none", md: "flex" } }}>
-                <MenuItem
+                {/*  <MenuItem
                   onClick={() => scrollToSection("features")}
                   sx={{ py: "6px", px: "12px", borderRadius: "20px" }}
                 >
@@ -119,6 +119,14 @@ const Navber = () => {
                   </Typography>
                 </MenuItem>
                 <MenuItem
+                  onClick={() => scrollToSection("pricing")}
+                  sx={{ py: "6px", px: "12px", borderRadius: "20px" }}
+                >
+                  <Typography variant="body2" color="primary">
+                    Pricing
+                  </Typography>
+                </MenuItem> */}
+                <MenuItem
                   onClick={() => scrollToSection("highlights")}
                   sx={{ py: "6px", px: "12px", borderRadius: "20px" }}
                 >
@@ -127,14 +135,6 @@ const Navber = () => {
                       Flats
                     </Typography>
                   </Link>
-                </MenuItem>
-                <MenuItem
-                  onClick={() => scrollToSection("pricing")}
-                  sx={{ py: "6px", px: "12px", borderRadius: "20px" }}
-                >
-                  <Typography variant="body2" color="primary">
-                    Pricing
-                  </Typography>
                 </MenuItem>
                 <MenuItem
                   onClick={() => scrollToSection("faq")}
@@ -193,12 +193,6 @@ const Navber = () => {
                   </MenuItem>
                   <MenuItem onClick={() => scrollToSection("testimonials")}>
                     Testimonials
-                  </MenuItem>
-                  <MenuItem onClick={() => scrollToSection("highlights")}>
-                    Highlights
-                  </MenuItem>
-                  <MenuItem onClick={() => scrollToSection("pricing")}>
-                    Pricing
                   </MenuItem>
                   <MenuItem onClick={() => scrollToSection("faq")}>
                     FAQ

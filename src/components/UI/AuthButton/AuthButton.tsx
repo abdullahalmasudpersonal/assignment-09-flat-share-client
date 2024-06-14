@@ -32,10 +32,7 @@ const AuthButton = () => {
           </MenuItem>
         </>
       ) : (
-        <MenuItem
-          onClick={handleLogOut}
-          sx={{ py: "6px", px: "12px", borderRadius: "20px" }}
-        >
+        <MenuItem sx={{ py: "6px", px: "12px", borderRadius: "20px" }}>
           <Link href="/login">
             <Typography variant="body2" color="primary">
               Login

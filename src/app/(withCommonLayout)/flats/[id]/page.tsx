@@ -54,7 +54,7 @@ const FlatDetailPage = ({ params }: TParams) => {
   return (
     <Box marginTop="120px" marginBottom="120px">
       <Container>
-        <Box>
+        {/*     <Box>
           {isLoading ? (
             "Loading..."
           ) : (
@@ -104,9 +104,7 @@ const FlatDetailPage = ({ params }: TParams) => {
                         {data?.flat?.availability ? "Yes" : "NO"}
                       </TableCell>
                       <TableCell align="center">
-                        {/*   <Link href={`/dashboard/admin/all-buyer/${data?.id}`}> */}
                         <Button variant="contained">Details</Button>
-                        {/* </Link> */}
                       </TableCell>
                     </TableRow>
                   ))}
@@ -114,7 +112,7 @@ const FlatDetailPage = ({ params }: TParams) => {
               </Table>
             </TableContainer>
           )}
-        </Box>
+        </Box> */}
         <Box sx={{ flexGrow: 1 }}>
           <Grid
             container

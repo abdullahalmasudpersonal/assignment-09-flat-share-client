@@ -67,11 +67,6 @@ export const drawerItems = (role: UserRole): DrawerItem[] => {
           title: "Flat Management",
           path: `${role}/flat-management`,
           icon: ManageHistoryIcon,
-        },
-        {
-          title: "Reviews",
-          path: `${role}/reviews`,
-          icon: ReviewsIcon,
         }
       );
       break;
@@ -87,11 +82,6 @@ export const drawerItems = (role: UserRole): DrawerItem[] => {
           title: "My Requests",
           path: `${role}/my-requests`,
           icon: RequestPageIcon,
-        },
-        {
-          title: "Payment History",
-          path: `${role}/payment-history`,
-          icon: PaymentIcon,
         }
       );
       break;
@@ -117,11 +107,6 @@ export const drawerItems = (role: UserRole): DrawerItem[] => {
           title: "My Requests",
           path: `${role}/my-requests`,
           icon: RequestPageIcon,
-        },
-        {
-          title: "Payment History",
-          path: `${role}/payment-history`,
-          icon: PaymentIcon,
         }
       );
       break;

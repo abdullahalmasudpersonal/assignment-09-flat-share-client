@@ -71,7 +71,7 @@ const Profile = () => {
                 />
               )}
             </Box>
-            <Box my={3} display="flex" justifyContent="center">
+            {/*  <Box my={3} display="flex" justifyContent="center">
               {updating ? (
                 <p>Uploading...</p>
               ) : (
@@ -83,16 +83,18 @@ const Profile = () => {
                   variant="outlined"
                 />
               )}
-            </Box>
+            </Box> */}
 
-            <Button
-              variant="contained"
-              fullWidth
-              endIcon={<ModeEditIcon />}
-              onClick={() => setIsModalOpen(true)}
-            >
-              Edit Profile
-            </Button>
+            <Box mt={3}>
+              <Button
+                variant="contained"
+                fullWidth
+                endIcon={<ModeEditIcon />}
+                onClick={() => setIsModalOpen(true)}
+              >
+                Edit Profile
+              </Button>
+            </Box>
             <Box my={3}>
               <Link href="/dashboard/change-password">
                 <Button

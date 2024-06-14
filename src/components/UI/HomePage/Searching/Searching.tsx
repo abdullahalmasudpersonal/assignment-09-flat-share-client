@@ -3,11 +3,13 @@ import {
   Button,
   FormControl,
   FormControlLabel,
-  FormLabel,
   Radio,
   RadioGroup,
   TextField,
 } from "@mui/material";
+import SearchFlatCard from "./SearchFlatCard";
+
+import React from "react";
 
 const Searching = () => {
   return (
@@ -33,7 +35,11 @@ const Searching = () => {
           }}
         />
         <Box ml={2} display="flex" alignItems="center">
-          <Button variant="contained" sx={{ height: "54px", width: "100px" }}>
+          <Button
+            type="submit"
+            variant="contained"
+            sx={{ height: "54px", width: "100px" }}
+          >
             Search
           </Button>
         </Box>
@@ -47,6 +53,7 @@ const Searching = () => {
             defaultValue="location"
           >
             <FormControlLabel
+              name="location"
               value="location"
               control={<Radio />}
               label="Location"
@@ -64,6 +71,7 @@ const Searching = () => {
           </RadioGroup>
         </FormControl>
       </Box>
+      {/*     <SearchFlatCard /> */}
     </>
   );
 };
